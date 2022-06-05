@@ -10,6 +10,6 @@ for i in range(15):
     character = secrets.choice(characters)
     password += character
 
-# Save password to clipboard
+# Copy password to clipboard
 pyperclip.copy(password)
 print(password)
