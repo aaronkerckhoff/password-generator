@@ -2,7 +2,7 @@ import secrets
 import pyperclip as pyperclip
 
 # Get all available characters
-characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
+characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()!@#$%^&*()!@#$%^&*()!@#$%^&*()'
 
 
 def generate_password():
