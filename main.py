@@ -4,12 +4,17 @@ import pyperclip as pyperclip
 # Get all available characters
 characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
 
-password = ''
-for i in range(15):
-    # Generate a random character
-    character = secrets.choice(characters)
-    password += character
+
+def generate_password():
+    password = ''
+    for i in range(15):
+        # Generate a random character
+        character = secrets.choice(characters)
+        password += character
+    return password
+
 
 # Copy password to clipboard
-pyperclip.copy(password)
-print(password)
+generated_password = generate_password()
+pyperclip.copy(generated_password)
+print(generated_password)
