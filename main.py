@@ -2,7 +2,6 @@ import secrets
 import pyperclip as pyperclip
 
 # Get all available characters
-characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
 letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 numbers = '0123456789'
 special_characters = '!@#$%^&*()'
@@ -12,13 +11,12 @@ def generate_password():
     password = ''
     for i in range(15):
         # Generate a random character
-        character = secrets.choice(characters)
+        character = secrets.choice(letters + numbers + special_characters)
         password += character
     return password
 
 
 generated_password = ''
-
 
 # Check if password includes at least one letter, one number, and one special character
 # If not, generate a new password
