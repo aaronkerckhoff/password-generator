@@ -1,5 +1,5 @@
 # Secure password generator
-This project generates secure 15-character passwords. After generation the password is being checked for the following criteria:
+This project generates secure 15-character passwords using cryptographic randomness. After generation, the password is being checked for the following criteria:
 * At least one uppercase letter
 * At least one lowercase letter
 * At least one number
