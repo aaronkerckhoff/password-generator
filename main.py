@@ -18,9 +18,9 @@ def generate_password():
 
 generated_password = ''
 
+
 # Check if password includes at least one letter, one number, and one special character
 # If not, generate a new password
-
 
 def contains_letter(password):
     return any(c in letters for c in password)
