@@ -20,7 +20,7 @@ def generate_password():
 generated_password = ''
 
 
-# Check if password includes at least one letter, one number, and one special character
+# Check if password includes at least one lowercase letter, one uppercase letter, one number, and one special character
 # If not, generate a new password
 
 def contains_lowercase_letter(password):
@@ -39,7 +39,11 @@ def contains_special_character(password):
     return any(c in special_characters for c in password)
 
 
-while not contains_lowercase_letter(generated_password) or not contains_uppercase_letter(generated_password) or not contains_number(generated_password) or not contains_special_character(generated_password):
+while \
+        not contains_lowercase_letter(generated_password)\
+        or not contains_uppercase_letter(generated_password)\
+        or not contains_number(generated_password)\
+        or not contains_special_character(generated_password):
     generated_password = generate_password()
 
 pyperclip.copy(generated_password)
