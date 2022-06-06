@@ -12,7 +12,7 @@ def generate_password():
     password = ''
     for i in range(15):
         # Generate a random character
-        character = secrets.choice(lowercase_letters + uppercase_letters + numbers + special_characters)
+        character = secrets.choice(lowercase_letters + uppercase_letters + (numbers * 2) + (special_characters * 3))
         password += character
     return password
 
