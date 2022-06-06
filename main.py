@@ -47,4 +47,3 @@ while \
     generated_password = generate_password()
 
 pyperclip.copy(generated_password)
-print(generated_password)
