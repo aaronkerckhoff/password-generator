@@ -9,6 +9,13 @@ The generated password meeting all the above criteria is then being copied to th
 
 ## Libraries
 [requirements.txt](requirements.txt)
+#### Install libraries
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
+```bash
+python3 main.py
+```
 You can bind `main.py` to some keybind to always generate a new secure password.
